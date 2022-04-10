@@ -26,6 +26,15 @@ void insertionSort (int v[], int length) {
   
 }
 
+
+void troca(int vetor[], int i, int j) {
+
+  int aux = vetor[i];
+  vetor[i] = vetor[j];
+  vetor[j] = aux;
+  
+}
+
 void permuta(int vetor[], int inf, int sup)
 {
 	if(inf == sup)
@@ -47,7 +56,7 @@ void permuta(int vetor[], int inf, int sup)
 
 int main(void) {
 
-  int vetor[] = {10, 20, 1, 2, 5, 25, 0, -1};
+  int vetor[] = {1, 2, 3, 10};
   int length = sizeof(vetor) / sizeof(int);
   
   for(int i = 0; i < length; i++) {
@@ -61,6 +70,10 @@ int main(void) {
   for(int i = 0; i < length; i++) {
     printf("%d ", vetor[i]);
   }
+
+  printf("encontrando permutações \n");
+
+  permuta(vetor, 0, length);
 
   return 0;
   
