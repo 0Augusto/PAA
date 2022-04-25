@@ -11,7 +11,7 @@ void mergesort(int * vetor, int inicio, int fim) { //Na primeira chamada, merges
     }
 }
 
-void intercalar(int * vetor, int inicio, int meio, int fim) {
+void intercalar(int * array, int inicio, int meio, int fim) {
 
     int n1, n2, i, j, k;
 
